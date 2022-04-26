@@ -1,13 +1,39 @@
-body {
+*{
+  border: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  font-family: sans-serif;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+frase {
+  font-size: 20px;
+  color: black;
+}
+Header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+.Logo{
+  font-size: 50px;
+  animation: flipRotate 3s;
+  border: 2px solid black;
+  border-radius: 3px;
+  background: linear-gradient(#fff, Black);
+
+
+}
+@keyframes flipRotate {
+  from{
+    transform: rotateX(80deg);
+  }
+  to{
+    transform: rotateX(0deg);
+  }
+}
+.Redesocial{
+  display: inline-block;
+  width: 300px;
 }
